@@ -5,8 +5,9 @@ import '@/app/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'OpenCivic',
-  description: 'An AI generated government assistant',
+  title: 'OpenCivic — Nepal Government Services Assistant',
+  description:
+    "Ask anything about Nepal's government services and get instant, AI-powered answers.",
 };
 
 export default function RootLayout({
@@ -16,15 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="min-h-full flex flex-col h-full">
-          <main className="mt-8 pb-8">
-            <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
-              <h1 className="sr-only">Assistant</h1>
-              {children}
-            </div>
-          </main>
-        </div>
+      <body
+        className={`${inter.className} min-h-screen flex flex-col bg-slate-50 antialiased`}
+      >
+        {children}
       </body>
     </html>
   );
