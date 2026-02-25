@@ -18,7 +18,7 @@ export default function HeroSection() {
           <span className="text-civic-green-700">Simplified</span>
         </h1>
         <p className="mt-4 text-lg text-slate-600">
-          Ask anything about Nepal&apos;s government services — get instant,
+          Ask anything about Nepal&apos;s government services. Get instant,
           AI-powered answers.
         </p>
       </div>
